@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- import CSS file -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Tic<span>Tac</span>Toe</h1>
+        <div class="playerChoices">
+            <!-- player chooses opponent  -->
+            <div class="selectionMenu">
+                <h2>Play versus</h2>
+                <div class="opponent">
+                    <button class="computer">Computer</button>
+                    <button class="friend">Friend</button>
+                </div>
+                
+            </div>
+            <!-- player enters name  -->
+            <div class="playerNames">
+                <input id="player1" type="text" placeholder="Player 1" required>
+                <input id="player2" type="text" placeholder="Player 2" required>
+                <button class="submitNames">Submit</button>
+            </div>
+            
+        </div>
+        <!-- who's next  -->
+        <div class="statusAction">
+            <div class="status">X is next</div>
+            <!-- <button id="restartButton">Restart</button> -->
+        </div>
+        <!-- Tic Tac Toe Game -->
+        <div class="gameGrid">
+            <div class="board" id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell=""></div>
+                <div class="cell" data-cell=""></div>
+                <div class="cell" data-cell=""></div>
+                <div class="cell" data-cell=""></div>
+                <div class="cell" data-cell=""></div>
+                <div class="cell" data-cell=""></div>
+                <div class="cell" data-cell=""></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- message pop up when game is done  -->
+    <div class="winningMessage" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+
+
+    <!-- import JavaScript file -->
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
