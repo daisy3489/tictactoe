@@ -118,6 +118,8 @@ body {
     margin-top: 25px;
     background-color: #0da192;
     display: grid;
+    align-content: center;
+    justify-content: center;
 
 }
 
@@ -186,9 +188,12 @@ body {
 }
 
 .cell.X::before,
-.cell.X::after,
-.cell.O::before {
+.cell.X::after {
     background-color: black;
+}
+
+.cell.O::before {
+    background-color: #f2ebd3;
 }
 
 
@@ -234,6 +239,12 @@ button:hover {
 
 .winningMessage.show {
     display: flex;
+}
+
+#submitNames:focus, #computer:focus, #friend:focus {
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-color: white;
 }
 
 #restartButton {
