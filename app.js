@@ -25,14 +25,10 @@ const restartButton = document.getElementById('restartButton')
 const statusDiv = document.querySelector('.status')
 const player1 = document.querySelector('#player1')
 const player2 = document.querySelector('#player2')
-const playerTurnElem = document.querySelector('#playerTurn')
 const nameButton = document.getElementById('submitNames')
 const computerBtn = document.querySelector(".computer");
 const friendBtn = document.querySelector(".friend");
 const options = document.querySelector(".options");
-
-
-
 
 // =========== START THE GAME / RESET ==========
 function startGame () {
@@ -42,8 +38,6 @@ function startGame () {
     //reset statusDiv
     statusDiv.innerText = capitalizeFirstLetter(player1.value) + " is next"
     // clear input 
-    // player1.value = ''
-    // player2.value = ''
     // loop through each cell 
     cellElements.forEach(cell => {
             
@@ -101,7 +95,6 @@ function handleClick (e) {
         endGame(true)
     }
     else {
-        
         //switch turns
         switchTurns()
         //get player name
@@ -198,27 +191,13 @@ nameButton.addEventListener("click", function(){
         <style>
         div .status {color: #993301;}
         </style>`
-
     }
     else {
         startGame()
     }
-    
-    // init(player, OPPONENT);
-    // options.classList.add("hide");
 });
 
 function switchActive(off, on){
     off.classList.remove("active");
     on.classList.add("active");
-}
-
-
-
-
-
-
-function init(player, OPPONENT){
-    
-        
 }
