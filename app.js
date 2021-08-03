@@ -151,6 +151,11 @@ function switchTurns () {
     circleTurn = !circleTurn
 }
 
+function switchActive(off, on){
+    off.classList.remove("active");
+    on.classList.add("active");
+}
+
 //====== HOVER EFFECTS ======
 function setHoverClass () {
     // cleaar classses 
@@ -197,7 +202,3 @@ nameButton.addEventListener("click", function(){
     }
 });
 
-function switchActive(off, on){
-    off.classList.remove("active");
-    on.classList.add("active");
-}
